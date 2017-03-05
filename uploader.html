@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebUploader演示</title>
+    <link rel="stylesheet" type="text/css" href="css/webuploader.css" />
+    <link rel="stylesheet" type="text/css" href="css/uploadstyle.css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/universal.css" rel="stylesheet">
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/universal.js"></script>
+<script src="js/home.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+function access_menu(){
+  document.getElementById("menu-inner-manage").style.display = "none";
+}
+</script>
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="CNRS" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- start menu -->
+    <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/memenu.js"></script>
+    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+
+
+<script>
+                $(function () {
+                    $("#slider").responsiveSlides({
+                        auto: true,
+                        nav: true,
+                        speed: 500,
+                        namespace: "callbacks",
+                        pager: true,
+                    });
+                });
+</script>
+</head>
+<body> 
+      <div id="header" class="row"> 
+        </div>      
+    <div id="wrapper">
+        <div id="container">
+            <!--头部，相册选择和格式选择-->
+
+            <div id="uploader">
+                <div class="queueList">
+                    <div id="dndArea" class="placeholder">
+                        <div id="filePicker"></div>
+                        <p>或将文件拖到这里，单次最多可选300个</p>
+                    </div>
+                </div>
+                <div class="statusBar" style="display:none;">
+                    <div class="progress">
+                        <span class="text">0%</span>
+                        <span class="percentage"></span>
+                    </div><div class="info"></div>
+                    <div class="btns">
+                        <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> //TODO
+    <script type="text/javascript" src="js/webuploader.js"></script>
+    <script type="text/javascript" src="js/uploader.js"></script>
+</body>
+</html>

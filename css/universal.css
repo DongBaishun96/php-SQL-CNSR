@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:rgb(240,240,240);
+}
+
+.nav-pills a {
+	font-size:15px;
+	font-weight:bold;
+}
+
+.panel-title {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.my_li a {
+	font-size:15px;
+	line-height:25px;
+	color:grey;
+	text-decoration:none;
+	margin-left:5px;
+}
+
+.my_li a:hover {
+	color:blue;
+}
+
+.panel-body p {
+	font-size:16px;
+	text-indent:32px;
+}

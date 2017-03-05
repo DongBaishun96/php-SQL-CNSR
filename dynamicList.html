@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/universal.css" rel="stylesheet">
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/universal.js"></script>
+<script src="js/dynamicList.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="CNRS" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
+<script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+
+</head>
+
+<body> 
+      <div id="header" class="row"> 
+        </div> 
+<div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            获取动态信息
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                     <form>
+            <fieldset>
+              选择信息类型：
+              <label><input name="D_Type" type="radio" value="新闻动态" />新闻动态 </label>
+              <label><input name="D_Type" type="radio" value="通知通告" />通知通告 </label>
+                            <label><input name="D_Type" type="radio" value="学术活动" />学术活动 </label>
+                            <br /> 
+                            <button type="button" class="btn btn-primary" onClick="dynamicList()">搜索</button>
+            </fieldset>
+          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div calss="row clearfix">
+        <div class="col-md-12 column">
+                    <div class="panel panel-default">
+           <div class="panel-heading">
+              <h3 id="title" class="panel-title"></h3>
+           </div>
+           <div class="panel-body">
+              <table>
+                   <thead>
+                      <tr>
+                         <th>信息ID</th>
+                         <th>信息类型</th>
+                         <th>信息时间</th>
+                      </tr>
+                   </thead>
+                   <tbody id="table">
+                   </tbody>
+              </table>
+           </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-class">
+            <p>Copyright &copy; 2016-2017 <a href="http://10.4.16.188/cnsr/">北京理工大学复杂网络与安全研究实验室</a></p>
+        </div>
+    </div>
+</body>
+</html>

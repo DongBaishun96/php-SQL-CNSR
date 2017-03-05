@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/universal.css" rel="stylesheet">
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/universal.js"></script>
+<script src="js/updateDynamic.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="CNRS" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
+<script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+
+</head>
+
+<body> 
+      <div id="header" class="row"> 
+        </div> 
+ <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            修改动态信息
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                    <form>
+                        <fieldset>
+                            
+                            <div class="form-group">
+                                <input class="form-control" placeholder="动态信息ID（必填）" id="D_ID" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="信息类型（选填）（新闻动态/通知通告/学术活动）" id="D_Type" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="标题（选填）" id="D_Title" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="发布者（选填）" id="D_Author" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="内容（选填）" id="D_Content" type="text" autofocus>
+                            </div>
+                            <br /> 
+                            <button type="button" class="btn btn-primary" onClick="updateDynamic()">提交</button>
+                        </fieldset>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-class">
+            <p>Copyright &copy; 2016-2017 <a href="http://10.4.16.188/cnsr/">北京理工大学复杂网络与安全研究实验室</a></p>
+        </div>
+    </div> 
+
+   
+</body>
+</html>
